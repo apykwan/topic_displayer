@@ -27,10 +27,7 @@ export default function HeaderAuth() {
       </PopoverTrigger>
       <PopoverContent>
         <div className="p-4">
-          <form action={() => {
-            actions.signOut();
-            redirect('/');
-          }}>
+          <form action={actions.signOut}>
             <Button type="submit">Sign Out</Button>
           </form>
         </div>
